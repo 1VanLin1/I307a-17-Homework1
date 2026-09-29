@@ -1,4 +1,14 @@
-int[] numbers = {1,2,3,4};
+Console.WriteLine("Введите размер массива:");
+var nuum = int.Parse(Console.ReadLine());
+int[] numbers = new int[nuum];
+
+Console.WriteLine("Введите числа массива, по одному числу");
+for (int i = 0; i < nuum; i++)
+{
+  Console.Write($"numbers[{i}] = ");
+  numbers[i] = int.Parse(Console.ReadLine());
+}
+
 var num = new ClsMath();
 
 Console.WriteLine($"{num.sum(numbers)}");
